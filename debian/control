@@ -1,0 +1,14 @@
+Source: calamares-desktop-layout
+Section: devel
+Priority: optional
+Maintainer: LliureX Team <lliurex@gva.es> 
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://lliurex.net
+#Vcs-Git: https://github.com/lliurex/calamares-desktop-layout.git 
+
+Package: calamares-desktop-layout
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, calamares
+Description: Select LliureX desktop layout
+ Calamares plugin to select layout desktop
