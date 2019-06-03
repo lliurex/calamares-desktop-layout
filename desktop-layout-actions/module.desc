@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "desktop-layout-actions"
+interface:  "python"
+script:     "main.py"
