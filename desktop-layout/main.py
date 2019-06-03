@@ -155,13 +155,14 @@ class SystemAddonsViewStep:
         label_2.setText(_(description))
         return label_2
 
-    def createRadio(self,layout_selected, checked):
+    def createRadio(self,layout_selected, selected):
         radioButton = QRadioButton()
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         radioButton.setSizePolicy(sizePolicy)
-        radioButton.setObjectName("checkBox", checked)
+        radioButton.setObjectName("checkBox")
+        radioButton.toggled(selected)
         radioButton.connect("clicked(bool)",lambda: self.modify_value(layout_selected))
         return radioButton
 
