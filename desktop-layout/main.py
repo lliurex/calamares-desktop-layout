@@ -162,7 +162,7 @@ class SystemAddonsViewStep:
         sizePolicy.setVerticalStretch(0)
         radioButton.setSizePolicy(sizePolicy)
         radioButton.setObjectName("checkBox")
-        radioButton.toggled(selected)
+        radioButton.setChecked(selected)
         radioButton.connect("clicked(bool)",lambda: self.modify_value(layout_selected))
         return radioButton
 
